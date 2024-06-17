@@ -1,0 +1,2663 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "synth_wrapper")
+  (DATE        "Mon May 27 03:11:18 -0400 2024")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "GENUS15.20 - 15.20-p004_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.799999)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::25.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE result_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::163))
+          (IOPATH CLK Q (::285) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-62))
+        (HOLD (posedge D) (posedge CLK) (::-45))
+        (SETUP (negedge D) (posedge CLK) (::131))
+        (SETUP (posedge D) (posedge CLK) (::71))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE result_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::163))
+          (IOPATH CLK Q (::285) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-66))
+        (HOLD (posedge D) (posedge CLK) (::-47))
+        (SETUP (negedge D) (posedge CLK) (::136))
+        (SETUP (posedge D) (posedge CLK) (::74))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE result_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::163))
+          (IOPATH CLK Q (::285) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-55))
+        (HOLD (posedge D) (posedge CLK) (::-42))
+        (SETUP (negedge D) (posedge CLK) (::123))
+        (SETUP (posedge D) (posedge CLK) (::67))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE carry_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::163))
+          (IOPATH CLK Q (::285) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-53))
+        (HOLD (posedge D) (posedge CLK) (::-42))
+        (SETUP (negedge D) (posedge CLK) (::122))
+        (SETUP (posedge D) (posedge CLK) (::67))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16535)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::54) (::47))
+          (IOPATH B Y (::62) (::62))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16537)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::54) (::59))
+          (IOPATH B Y (::62) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE result_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::163))
+          (IOPATH CLK Q (::285) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-58))
+        (HOLD (posedge D) (posedge CLK) (::-54))
+        (SETUP (negedge D) (posedge CLK) (::127))
+        (SETUP (posedge D) (posedge CLK) (::82))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16540)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::67) (::55))
+          (IOPATH B Y (::75) (::58))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__a21oi_2")
+     (INSTANCE g16543)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::126) (::58))
+          (IOPATH B1 Y (::100) (::37))
+          (IOPATH A2 Y (::132) (::65))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__a21o_1")
+     (INSTANCE g16544)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 X (::111) (::155))
+          (IOPATH B1 X (::84) (::151))
+          (IOPATH A2 X (::121) (::173))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_1")
+     (INSTANCE g16548)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::52) (::41))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__a21oi_2")
+     (INSTANCE g16549)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::107) (::58))
+          (IOPATH B1 Y (::100) (::36))
+          (IOPATH A2 Y (::132) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o21ai_1")
+     (INSTANCE g16552)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::134) (::87))
+          (IOPATH B1 Y (::72) (::59))
+          (IOPATH A2 Y (::121) (::70))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16554)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::66) (::56))
+          (IOPATH B Y (::68) (::60))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g16556)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::87) (::80))
+          (IOPATH B Y (::123) (::103))
+          (IOPATH C Y (::99) (::92))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o211a_1")
+     (INSTANCE g16559)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 X (::145) (::124))
+          (IOPATH A1 X (::153) (::219))
+          (IOPATH B1 X (::145) (::125))
+          (IOPATH A2 X (::146) (::220))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2b_1")
+     (INSTANCE g16564)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::73) (::72))
+          (IOPATH A_N Y (::108) (::141))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g16576)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::67) (::67))
+          (IOPATH B Y (::82) (::75))
+          (IOPATH C Y (::89) (::88))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16587)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::58) (::72))
+          (IOPATH B Y (::60) (::65))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o22a_1")
+     (INSTANCE g16602)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT B2 (::0.0))
+          (IOPATH B2 X (::116) (::164))
+          (IOPATH A1 X (::156) (::211))
+          (IOPATH B1 X (::146) (::185))
+          (IOPATH A2 X (::134) (::205))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16607)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::80) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g16615)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::80) (::84))
+          (IOPATH B Y (::95) (::92))
+          (IOPATH C Y (::98) (::99))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16616)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::57) (::57))
+          (IOPATH B Y (::74) (::62))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and3_1")
+     (INSTANCE g16624)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A X (::168) (::150))
+          (IOPATH B X (::176) (::173))
+          (IOPATH C X (::185) (::201))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16638)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::122) (::73))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16640)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::64) (::62))
+          (IOPATH B Y (::68) (::63))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and2_1")
+     (INSTANCE g16643)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::148) (::155))
+          (IOPATH B X (::156) (::179))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g16646)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::77) (::74))
+          (IOPATH B Y (::80) (::83))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g16647)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::85) (::90))
+          (IOPATH B Y (::103) (::102))
+          (IOPATH C Y (::101) (::105))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_1")
+     (INSTANCE g16658)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::114) (::43))
+          (IOPATH B Y (::90) (::44))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g16661)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::88) (::75))
+          (IOPATH B Y (::97) (::78))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16670)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::70) (::46))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_1")
+     (INSTANCE g16671)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::70) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2b_1")
+     (INSTANCE g16681)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::75) (::60))
+          (IOPATH A_N Y (::112) (::149))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16700)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::70) (::55))
+          (IOPATH B Y (::70) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16707)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::67))
+          (IOPATH B Y (::94) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_1")
+     (INSTANCE g16713)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::83) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16714)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::86) (::60))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_4")
+     (INSTANCE g16720)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::86) (::63))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_2")
+     (INSTANCE b_reg_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::247))
+          (IOPATH CLK Q (::365) (::402))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-219))
+        (HOLD (negedge D) (posedge CLK) (::-34))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::106))
+        (SETUP (posedge D) (posedge CLK) (::60))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_2")
+     (INSTANCE a_reg_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::254))
+          (IOPATH CLK Q (::374) (::409))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-219))
+        (HOLD (negedge D) (posedge CLK) (::-34))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::106))
+        (SETUP (posedge D) (posedge CLK) (::60))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE op_reg_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::219))
+          (IOPATH CLK Q (::352) (::375))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-38))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::105))
+        (SETUP (posedge D) (posedge CLK) (::56))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE a_reg_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::194))
+          (IOPATH CLK Q (::322) (::353))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-38))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::105))
+        (SETUP (posedge D) (posedge CLK) (::56))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE b_reg_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::194))
+          (IOPATH CLK Q (::320) (::352))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-38))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::105))
+        (SETUP (posedge D) (posedge CLK) (::56))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_2")
+     (INSTANCE op_reg_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::250))
+          (IOPATH CLK Q (::370) (::406))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-219))
+        (HOLD (negedge D) (posedge CLK) (::-34))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::106))
+        (SETUP (posedge D) (posedge CLK) (::60))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_2")
+     (INSTANCE a_reg_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::257))
+          (IOPATH CLK Q (::378) (::412))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-219))
+        (HOLD (negedge D) (posedge CLK) (::-34))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::106))
+        (SETUP (posedge D) (posedge CLK) (::60))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_2")
+     (INSTANCE op_reg_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::253))
+          (IOPATH CLK Q (::374) (::408))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-219))
+        (HOLD (negedge D) (posedge CLK) (::-34))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::106))
+        (SETUP (posedge D) (posedge CLK) (::60))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE a_reg_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::197))
+          (IOPATH CLK Q (::326) (::355))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-38))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::105))
+        (SETUP (posedge D) (posedge CLK) (::56))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_2")
+     (INSTANCE b_reg_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::260))
+          (IOPATH CLK Q (::386) (::415))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-219))
+        (HOLD (negedge D) (posedge CLK) (::-34))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::106))
+        (SETUP (posedge D) (posedge CLK) (::60))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__dfrtp_1")
+     (INSTANCE b_reg_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESET_B Q () (::194))
+          (IOPATH CLK Q (::320) (::352))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::296))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::-228))
+        (HOLD (negedge D) (posedge CLK) (::-38))
+        (HOLD (posedge D) (posedge CLK) (::-32))
+        (SETUP (negedge D) (posedge CLK) (::105))
+        (SETUP (posedge D) (posedge CLK) (::56))
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__buf_1")
+     (INSTANCE drc_bufs16799)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::110) (::88))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3b_2")
+     (INSTANCE g16843)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH B Y (::74) (::92))
+          (IOPATH A_N Y (::125) (::209))
+          (IOPATH C Y (::88) (::92))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16847)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::65) (::56))
+          (IOPATH B Y (::73) (::67))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16852)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::96) (::84))
+          (IOPATH B Y (::76) (::76))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g16853)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::74) (::80))
+          (IOPATH B Y (::101) (::105))
+          (IOPATH C Y (::107) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkbuf_1")
+     (INSTANCE fopt)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::125) (::105))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkbuf_1")
+     (INSTANCE fopt16855)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::112) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_1")
+     (INSTANCE fopt16867)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::62) (::84))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkbuf_2")
+     (INSTANCE fopt16868)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::150) (::140))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE fopt16869)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::96) (::67))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o21ai_1")
+     (INSTANCE g16878)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::137) (::75))
+          (IOPATH B1 Y (::78) (::82))
+          (IOPATH A2 Y (::119) (::62))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o22a_1")
+     (INSTANCE g16884)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT B2 (::0.0))
+          (IOPATH B2 X (::139) (::172))
+          (IOPATH A1 X (::153) (::215))
+          (IOPATH B1 X (::158) (::189))
+          (IOPATH A2 X (::148) (::210))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_2")
+     (INSTANCE g16885)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::113) (::51))
+          (IOPATH B Y (::94) (::41))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16887)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::81) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g16888)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::64) (::69))
+          (IOPATH B Y (::87) (::75))
+          (IOPATH C Y (::83) (::81))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g16921)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::80) (::93))
+          (IOPATH A Y (::65) (::73))
+          (IOPATH B Y (::83) (::81))
+          (IOPATH C Y (::77) (::84))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkbuf_2")
+     (INSTANCE g16922)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::135) (::118))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_2")
+     (INSTANCE g16923)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::146) (::58))
+          (IOPATH B Y (::113) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g16924)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::56) (::56))
+          (IOPATH B Y (::64) (::58))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_1")
+     (INSTANCE g16925)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::109) (::54))
+          (IOPATH B Y (::92) (::51))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16926)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::67) (::59))
+          (IOPATH B Y (::80) (::76))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_2")
+     (INSTANCE g16953)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::141) (::58))
+          (IOPATH B Y (::126) (::50))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g16955)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::56) (::72))
+          (IOPATH B Y (::64) (::55))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and2_1")
+     (INSTANCE g16956)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::116) (::127))
+          (IOPATH B X (::139) (::168))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16962)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::72) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g16963)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::91) (::101))
+          (IOPATH B Y (::102) (::114))
+          (IOPATH C Y (::101) (::114))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__buf_1")
+     (INSTANCE g16967)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::112) (::97))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16968)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::78) (::53))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_4")
+     (INSTANCE g16969)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::90) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_4")
+     (INSTANCE g16996)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::93) (::60))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_4")
+     (INSTANCE g16997)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::114) (::73))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_4")
+     (INSTANCE g16998)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::76) (::63))
+          (IOPATH B Y (::84) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and2_4")
+     (INSTANCE g16999)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::173) (::154))
+          (IOPATH B X (::184) (::180))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g17003)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::98) (::116))
+          (IOPATH A Y (::79) (::106))
+          (IOPATH B Y (::101) (::107))
+          (IOPATH C Y (::125) (::126))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_4")
+     (INSTANCE fopt17010)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::60) (::35))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_1")
+     (INSTANCE fopt17012)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::61) (::38))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_1")
+     (INSTANCE fopt17013)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::56) (::82))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE fopt17014)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::58) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__buf_6")
+     (INSTANCE fopt17015)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::132) (::137))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g17049)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::76) (::68))
+          (IOPATH B Y (::85) (::75))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g17050)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::74) (::46))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g17053)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::84) (::78))
+          (IOPATH B Y (::101) (::105))
+          (IOPATH C Y (::107) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_1")
+     (INSTANCE fopt17074)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::59) (::55))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and2_1")
+     (INSTANCE g17093)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::153) (::149))
+          (IOPATH B X (::149) (::178))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o22a_1")
+     (INSTANCE g17115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT B2 (::0.0))
+          (IOPATH B2 X (::116) (::164))
+          (IOPATH A1 X (::148) (::212))
+          (IOPATH B1 X (::141) (::182))
+          (IOPATH A2 X (::134) (::205))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_4")
+     (INSTANCE g17129)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::56) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_4")
+     (INSTANCE fopt17130)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::53) (::62))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g17132)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::79) (::93))
+          (IOPATH A Y (::61) (::69))
+          (IOPATH B Y (::82) (::81))
+          (IOPATH C Y (::85) (::92))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17133)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::60) (::47))
+          (IOPATH B Y (::65) (::51))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g17134)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::86) (::75))
+          (IOPATH B Y (::89) (::84))
+          (IOPATH C Y (::79) (::81))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g1)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::100) (::111))
+          (IOPATH A Y (::108) (::117))
+          (IOPATH B Y (::95) (::102))
+          (IOPATH C Y (::108) (::108))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE fopt17135)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::58) (::47))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_1")
+     (INSTANCE fopt17152)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::62) (::87))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_1")
+     (INSTANCE g17168)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::111) (::61))
+          (IOPATH B Y (::90) (::43))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17173)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::64) (::60))
+          (IOPATH B Y (::75) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17175)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::74) (::67))
+          (IOPATH B Y (::81) (::66))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17176)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::64) (::66))
+          (IOPATH B Y (::81) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__a21boi_1")
+     (INSTANCE g17177)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1_N (::0.0))
+          (IOPATH B1_N Y (::174) (::152))
+          (IOPATH A1 Y (::132) (::64))
+          (IOPATH A2 Y (::145) (::85))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE fopt17182)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::50) (::34))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2b_1")
+     (INSTANCE g17187)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::72) (::68))
+          (IOPATH A_N Y (::102) (::140))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_4")
+     (INSTANCE g17189)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (PORT B (::0.0))
+          (IOPATH A Y (::70) (::61))
+          (IOPATH B Y (::78) (::67))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17192)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::60) (::54))
+          (IOPATH B Y (::91) (::74))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3b_1")
+     (INSTANCE g17193)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH B Y (::120) (::110))
+          (IOPATH A_N Y (::116) (::168))
+          (IOPATH C Y (::98) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17194)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::64) (::65))
+          (IOPATH B Y (::68) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_1")
+     (INSTANCE g16705_dup17198)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::114) (::43))
+          (IOPATH B Y (::87) (::36))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__buf_6")
+     (INSTANCE g17199)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::115) (::121))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o21ai_1")
+     (INSTANCE g17200)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::129) (::65))
+          (IOPATH B1 Y (::84) (::73))
+          (IOPATH A2 Y (::120) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g17235)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::72) (::81))
+          (IOPATH B Y (::83) (::88))
+          (IOPATH C Y (::86) (::93))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17244)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::86) (::76))
+          (IOPATH B Y (::92) (::77))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o21ai_2")
+     (INSTANCE g52)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::141) (::70))
+          (IOPATH B1 Y (::66) (::56))
+          (IOPATH A2 Y (::126) (::51))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g61)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::48))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g62)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::60) (::38))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_4")
+     (INSTANCE g63)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::88) (::95))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_1")
+     (INSTANCE g53)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::53) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g54)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::65) (::55))
+          (IOPATH B Y (::68) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g57)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::60) (::62))
+          (IOPATH B Y (::80) (::67))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_4")
+     (INSTANCE g66)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::91) (::60))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g65)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::44) (::36))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g55)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::50) (::56))
+          (IOPATH B Y (::73) (::84))
+          (IOPATH C Y (::71) (::82))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g59)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::44) (::33))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_2")
+     (INSTANCE g91)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::141) (::55))
+          (IOPATH B Y (::95) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g14)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::44) (::42))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nor2_2")
+     (INSTANCE g15)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::120) (::48))
+          (IOPATH B Y (::99) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and2_2")
+     (INSTANCE g17)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::168) (::192))
+          (IOPATH B X (::165) (::207))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g18)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::87) (::72))
+          (IOPATH B Y (::95) (::77))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g16)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::64) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g17254)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::58) (::37))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g17255)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::87) (::77))
+          (IOPATH B Y (::99) (::88))
+          (IOPATH C Y (::99) (::86))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g17257)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::87) (::95))
+          (IOPATH A Y (::66) (::73))
+          (IOPATH B Y (::82) (::84))
+          (IOPATH C Y (::86) (::90))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__a21oi_2")
+     (INSTANCE g51)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::112) (::51))
+          (IOPATH B1 Y (::111) (::37))
+          (IOPATH A2 Y (::123) (::63))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_2")
+     (INSTANCE g17258)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::106) (::113))
+          (IOPATH A Y (::80) (::79))
+          (IOPATH B Y (::78) (::87))
+          (IOPATH C Y (::100) (::103))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g29)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::59) (::55))
+          (IOPATH B Y (::71) (::70))
+          (IOPATH C Y (::57) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g31)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::64) (::58))
+          (IOPATH B Y (::73) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o21ai_1")
+     (INSTANCE g20)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::144) (::78))
+          (IOPATH B1 Y (::78) (::63))
+          (IOPATH A2 Y (::125) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g21)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::82) (::78))
+          (IOPATH B Y (::95) (::79))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g96)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::66) (::74))
+          (IOPATH B Y (::74) (::82))
+          (IOPATH C Y (::88) (::99))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE fopt17321)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::72) (::46))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g104)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::62) (::58))
+          (IOPATH B Y (::72) (::79))
+          (IOPATH C Y (::85) (::79))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g105)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::108) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and3b_1")
+     (INSTANCE g98)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH B X (::175) (::174))
+          (IOPATH A_N X (::220) (::179))
+          (IOPATH C X (::182) (::186))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g100)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::49) (::47))
+          (IOPATH B Y (::68) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g99)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::90) (::94))
+          (IOPATH A Y (::74) (::96))
+          (IOPATH B Y (::84) (::90))
+          (IOPATH C Y (::95) (::106))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and3_1")
+     (INSTANCE g101)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A X (::151) (::142))
+          (IOPATH B X (::155) (::174))
+          (IOPATH C X (::169) (::183))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__or2_1")
+     (INSTANCE g97)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::104) (::228))
+          (IOPATH B X (::94) (::205))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g17322)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::66) (::78))
+          (IOPATH B Y (::86) (::83))
+          (IOPATH C Y (::83) (::79))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g17324)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::66) (::55))
+          (IOPATH B Y (::76) (::62))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g60)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::82) (::95))
+          (IOPATH A Y (::69) (::76))
+          (IOPATH B Y (::86) (::97))
+          (IOPATH C Y (::90) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17327)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::75) (::64))
+          (IOPATH B Y (::84) (::77))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g49)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::65) (::57))
+          (IOPATH B Y (::78) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g17329)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::74) (::63))
+          (IOPATH B Y (::62) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g50)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::58) (::57))
+          (IOPATH B Y (::72) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2b_1")
+     (INSTANCE g17330)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::70) (::62))
+          (IOPATH A_N Y (::109) (::144))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g22)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::58) (::51))
+          (IOPATH B Y (::81) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g23)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::68) (::56))
+          (IOPATH B Y (::81) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g45)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::72) (::77))
+          (IOPATH B Y (::80) (::75))
+          (IOPATH C Y (::79) (::79))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o21ba_1")
+     (INSTANCE g46)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1_N (::0.0))
+          (IOPATH B1_N X (::219) (::152))
+          (IOPATH A1 X (::143) (::201))
+          (IOPATH A2 X (::129) (::176))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g48)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::94) (::78))
+          (IOPATH B Y (::99) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__a21oi_2")
+     (INSTANCE g47)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::121) (::60))
+          (IOPATH B1 Y (::97) (::33))
+          (IOPATH A2 Y (::131) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g93)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::66) (::56))
+          (IOPATH B Y (::67) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g94)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::72) (::66))
+          (IOPATH B Y (::90) (::80))
+          (IOPATH C Y (::83) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2b_1")
+     (INSTANCE g17331)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::75) (::70))
+          (IOPATH A_N Y (::108) (::152))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g78)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::77) (::61))
+          (IOPATH B Y (::97) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g81)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::86) (::72))
+          (IOPATH B Y (::116) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g82)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::74) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_2")
+     (INSTANCE g84)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::83) (::95))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4b_1")
+     (INSTANCE g77)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::110) (::122))
+          (IOPATH B Y (::103) (::113))
+          (IOPATH A_N Y (::137) (::198))
+          (IOPATH C Y (::116) (::116))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4bb_1")
+     (INSTANCE g76)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B_N (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::101) (::122))
+          (IOPATH A_N Y (::133) (::187))
+          (IOPATH C Y (::110) (::122))
+          (IOPATH B_N Y (::153) (::214))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g79)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::51) (::42))
+          (IOPATH B Y (::60) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g80)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::131) (::116))
+          (IOPATH B Y (::137) (::105))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g83)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::116) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g17333)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::62) (::75))
+          (IOPATH B Y (::77) (::72))
+          (IOPATH C Y (::70) (::73))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_1")
+     (INSTANCE g17334)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::60) (::50))
+          (IOPATH B Y (::65) (::63))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g34)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::54) (::63))
+          (IOPATH B Y (::66) (::76))
+          (IOPATH C Y (::78) (::87))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g35)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::73) (::46))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_2")
+     (INSTANCE g36)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::78) (::73))
+          (IOPATH B Y (::81) (::79))
+          (IOPATH C Y (::90) (::84))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g8)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::63) (::62))
+          (IOPATH B Y (::81) (::65))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g9)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::102) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE g10)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::86) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g17335)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::50) (::44))
+          (IOPATH B Y (::76) (::62))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and2_4")
+     (INSTANCE g17336)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::162) (::148))
+          (IOPATH B X (::173) (::173))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand2_2")
+     (INSTANCE g17337)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::116) (::88))
+          (IOPATH B Y (::129) (::95))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_2")
+     (INSTANCE fopt17338)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::70) (::53))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__clkinv_2")
+     (INSTANCE fopt17340)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::61) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__buf_4")
+     (INSTANCE fopt17342)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A X (::144) (::160))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_4")
+     (INSTANCE fopt17345)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.1))
+          (IOPATH A Y (::96) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4_1")
+     (INSTANCE g2)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::108) (::128))
+          (IOPATH A Y (::91) (::112))
+          (IOPATH B Y (::97) (::108))
+          (IOPATH C Y (::112) (::119))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_1")
+     (INSTANCE drc_bufs)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::67) (::47))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__inv_1")
+     (INSTANCE drc_bufs17357)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::52) (::50))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and3_1")
+     (INSTANCE g17506)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A X (::171) (::167))
+          (IOPATH B X (::179) (::190))
+          (IOPATH C X (::182) (::202))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand4b_1")
+     (INSTANCE g17507)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::87) (::100))
+          (IOPATH B Y (::76) (::85))
+          (IOPATH A_N Y (::100) (::152))
+          (IOPATH C Y (::89) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o211a_1")
+     (INSTANCE g17508)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 X (::154) (::112))
+          (IOPATH A1 X (::156) (::229))
+          (IOPATH B1 X (::141) (::123))
+          (IOPATH A2 X (::130) (::209))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__o21ai_1")
+     (INSTANCE g17509)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 Y (::132) (::76))
+          (IOPATH B1 Y (::74) (::65))
+          (IOPATH A2 Y (::121) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3_1")
+     (INSTANCE g17510)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::86) (::81))
+          (IOPATH B Y (::81) (::75))
+          (IOPATH C Y (::93) (::83))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__nand3b_1")
+     (INSTANCE g17511)
+     (DELAY
+        (ABSOLUTE
+          (PORT A_N (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH B Y (::84) (::83))
+          (IOPATH A_N Y (::111) (::160))
+          (IOPATH C Y (::74) (::79))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__and2_1")
+     (INSTANCE g17548)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::156) (::152))
+          (IOPATH B X (::163) (::182))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sky130_fd_sc_hd__or2_1")
+     (INSTANCE g17549)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::130) (::248))
+          (IOPATH B X (::118) (::229))
+        )
+     )
+  )
+)

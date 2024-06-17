@@ -1,0 +1,104 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xrun: *W,FMDEF: The default file type mapping of .sv is being overwritten.
+TOOL:	xrun(64)	20.09-s001: Started on May 27, 2024 at 02:58:20 EDT
+xrun
+	-gui
+	+xm64bit
+	-sv
+	-vlogext .sv
+	-f 00_src/flist.f
+		00_src/alu.sv
+		00_src/and4.sv
+		00_src/and4bit.sv
+		00_src/mux2by1.sv
+		00_src/mux2by1_4bit.sv
+		00_src/mux8by1.sv
+		00_src/not4bit.sv
+		00_src/or4bit.sv
+		00_src/or8.sv
+		00_src/full_adder.sv
+		00_src/ripple_adder.sv
+		00_src/shift_left.sv
+		00_src/shift_right.sv
+		00_src/xor4bit.sv
+		00_src/synth_wrapper.sv
+	01_tb/alu_tb.sv
+	-timescale 1ns/10ps
+	+access+rcw
+Recompiling... reason: file './00_src/shift_left.sv' is newer than expected.
+	expected: Mon May 27 02:54:19 2024
+	actual:   Mon May 27 02:58:18 2024
+file: 00_src/shift_left.sv
+	module worklib.shift_left:sv
+		errors: 0, warnings: 0
+file: 00_src/shift_right.sv
+	module worklib.shift_right:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		alu_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.orr8:sv <0x08599412>
+			streams:   1, words:   172
+		worklib.an4:sv <0x50733890>
+			streams:   1, words:   172
+		worklib.mux8by1:sv <0x282ebc66>
+			streams:   1, words:   393
+		worklib.shift_right:sv <0x696c25a6>
+			streams:   2, words:   882
+		worklib.mux2by1_4bit:sv <0x357b9060>
+			streams:   4, words:  1706
+		worklib.mux2by1:sv <0x0f9258cb>
+			streams:   1, words:   172
+		worklib.mux2by1_4bit:sv <0x28ee83b7>
+			streams:   4, words:  1843
+		worklib.shift_left:sv <0x26f53026>
+			streams:   2, words:   882
+		worklib.xor4bit:sv <0x3327d55c>
+			streams:   4, words:   971
+		worklib.or4bit:sv <0x69c0a3a2>
+			streams:   4, words:   971
+		worklib.and4bit:sv <0x5e87c059>
+			streams:   4, words:   971
+		worklib.not4bit:sv <0x78ebf293>
+			streams:   4, words:   971
+		worklib.ripple_adder:sv <0x7bd185de>
+			streams:   5, words:  2257
+		worklib.alu:sv <0x513dd880>
+			streams:   7, words:  2233
+		worklib.synth_wrapper:sv <0x03ef4203>
+			streams:   8, words:  3590
+		worklib.alu_tb:sv <0x33d88780>
+			streams:  10, words:  8168
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                102      16
+		Primitives:             335       4
+		Registers:              109      29
+		Scalar wires:           240       -
+		Expanded wires:          87      22
+		Vectored wires:          11       -
+		Always blocks:            2       2
+		Initial blocks:           2       2
+		Pseudo assignments:     159      56
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.alu_tb:sv
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm alu_tb.a alu_tb.b alu_tb.carry alu_tb.clk alu_tb.op alu_tb.result alu_tb.rst_n
+Created probe 1
+xcelium> run
+Simulation interrupted at 14413793700 NS + 0
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on May 27, 2024 at 03:08:38 EDT  (total: 00:10:18)

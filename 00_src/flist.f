@@ -1,0 +1,15 @@
+00_src/alu.sv
+00_src/and4.sv
+00_src/and4bit.sv
+00_src/mux2by1.sv
+00_src/mux2by1_4bit.sv
+00_src/mux8by1.sv
+00_src/not4bit.sv
+00_src/or4bit.sv
+00_src/or8.sv
+00_src/full_adder.sv
+00_src/ripple_adder.sv
+00_src/shift_left.sv
+00_src/shift_right.sv
+00_src/xor4bit.sv
+00_src/synth_wrapper.sv
